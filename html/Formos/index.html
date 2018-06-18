@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<!-- Jeigu formos duomenys siunčiami į back-end, tai būtinai reikia naudoti elementą <form>-->
+
+    <!-- <form class="" action="index.html" method="post">
+      <fieldset style="width:50%">
+        <legend>Prisijungimas</legend>
+        Vardas: <input type="text" name="username" value=""><br>
+        Slaptažodis: <input type="password" name="password" value=""><br >
+      </fieldset>
+      <input type="submit" name="" value="OK">
+    </form> -->
+
+<!-- Toliau kita forma -->
+
+    <form class="" action="index.html" method="post">
+      <fieldset>
+        <legend>Prisijungimas</legend>
+        <table>
+          <tr>
+            <td>Vardas: </td>
+            <td><input type="text" name="username" value="" required></td>
+            <!-- REQUIRED - privalomas užpildyti laukas -->
+          </tr>
+          <tr>
+            <td>Slaptažodis: </td>
+            <td><input type="password" name="password" value="" placeholder="Įveskite slaptažodį"></td>
+            <!-- PLACEHOLDER - paaiškinantis tekstas - matosi pačiame lauke -->
+          </tr>
+          <tr>
+            <td colspan="2"><input style="width:100%" type="submit" name="" value="OK"></td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <fieldset>
+        <legend>Kokias programavimo kalbas žinote?</legend>
+        <table>
+          <tr>
+            <td>C#</td>
+            <td><input type="checkbox" name="language" value="csharp"></td>
+            <td>JAVA</td>
+            <td><input type="checkbox" name="language" value="java"></td>
+            <td>Javascript</td>
+            <td><input type="checkbox" name="language" value="javascript"></td>
+            <!-- Į back-end perduodamas String masyvas su tiek elementų, kurie bus pažymėti ir pažymėtų elementų reikšmes -->
+          </tr>
+        </table>
+      </fieldset>
+
+      <fieldset>
+        <legend>Lytis</legend>
+        <table>
+          <tr>
+            <td>vyras</td>
+            <td>
+              <input type="radio" name="gender" value="man">
+            </td>
+          </tr>
+          <tr>
+            <td>moteris</td>
+            <td>
+              <input type="radio" name="gender" value="woman">
+            </td>
+          </tr>
+          <!-- radio butonn name turi būti tas pats, nes kitu atveju interpretuos juos kaip atskirus radio butonus.  -->
+        </table>
+      </fieldset>
+
+      <fieldset>
+        <legend>Jūsų komenraras</legend>
+        <textarea name="name" rows="5" cols="40"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Kontaktai</legend>
+        <table>
+          <tr>
+            <td>El. paštas</td>
+            <td>
+              <input type="email" name="" value="">
+            </td>
+          </tr>
+          <tr>
+            <td>Svetainė</td>
+            <td>
+              <input type="url" name="" value="">
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <input type="submit" name="" value="Siųsti">
+    </form>
+  </body>
+</html>
