@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Įvadas į CSS</title>
+    <link rel="stylesheet" href="css/master.css">
+    <style media="screen">
+      p{
+        color:blue;
+        /* Jeigu parašau !important - tai tada šitas stilius privalomai taikomas, nesvarbus, kas būtų nurodyta konkretaus elemento stiliuje. Pavyzdys - color:blue!important; */
+      }
+      /* Į klasę yra kreipiamasi rašant tašką, o paskui klasės pavadinimą. */
+      .antras{
+        color: red;
+      }
+      .trecias{
+        font-family: verdana serif;
+        /* kai fonto pavadinimo parašau fontų šeimą, tai tada parinks naršyklė fontą iš tos šeimos, jeigu vartotojo kompiuteryje nebus nurodyto fonto */
+        font-size: 16
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Skyrius 1</h1>
+    <!-- Šitas paragrafas be įterpto stiliaus -->
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <!-- Šitas paragrafas be įterpto stiliaus -->
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <!-- Šitas paragrafas yra su įterptu stiliumi -->
+      <!-- Style viduje gali būti keletas deklaracijų. Jos atskiriamos kabliataškiu -->
+
+      <p style="color:green; line-height:30px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p class="antras">Antras. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p class="trecias">Trečias. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p id="paskutinis">Trečias. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <form class="" action="index.html" method="post">
+        <table>
+          <tr>
+            <td>Slapyvardis</td>
+            <td>
+              <input type="text" name="" value="" required>
+            </td>
+          </tr>
+          <tr>
+            <td>Komentaras</td>
+            <td>
+              <textarea name="name" rows="8" cols="80" required placeholder="Įrašyk komentarą"></textarea>
+            </td>
+          </tr>
+        </table>
+        <input type="submit" name="" value="Siųsti">
+      </form>
+
+  </body>
+</html>

@@ -1,0 +1,25 @@
+*{
+  /* Šitas naudojamas, jeigu viską viską kažkaip vienodai atvaizduoti */
+}
+
+.trecias{
+  background-color: purple;
+}
+#paskutinis{
+  word-spacing: 20px;
+  font: magenta
+}
+
+[required]{
+  /* Selektorius gali būti ir atributas. Jis rašomas laužtiniuose skliaustuose */
+  background-color: red;
+  width: 100%;
+}
+input[required]{
+  /* Šiuo atveju stilius bus taikomas tik tiems atributą REQUIRED turinčius elementus, kurie yra INPUT elementai */
+  color: blue
+}
+
+[type="text"]{
+  /* Šiuo atveju stilius būtų taikomas tik tiems input elementams, kurie turi atributą type="text" */
+}
