@@ -1,0 +1,40 @@
+[class^="box"]{
+  width:100px;
+  height:100px;
+  border: 1px solid black;
+}
+/* Čia reiškia, kad stilius taikomas visiems atributams, kurie prasideda 'box' */
+[class^="tinybox"]{
+  height: 20px;
+  width: 20px;
+  border: 1px solid black;
+}
+.tinybox1{
+  position: relative;
+  left: 80px;
+}
+
+.tinybox2{
+  position: relative;
+  left: 20;
+  top: 57px;
+}
+
+.box1{
+  position: relative;
+  background-color: yellow;
+  left: 100px;
+  z-index: -9999;
+  /* z-index nustumia elementą į poziciją erdvėje virš arba po kitų objektų */
+}
+
+.box2{
+  position: absolute;
+  background-color: green;
+  left: 200px;
+  top: 50px;
+  /* Šitas objektas yra absolute, todėl jis išimtas iš konteksto - jo vietą užima paskiau einjantys elementai */
+}
+.box3{
+  background-color: red;
+}
