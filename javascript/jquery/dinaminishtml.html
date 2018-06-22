@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <input id="tekstas" type="text" name="" value="">
+    <input id="ok" type="button" name="" value="OK">
+    <div class="box">
+      <ul>
+
+      </ul>
+    </div>
+      <script src = "js/jquery-3.3.1.js"></script>
+      <script type="text/javascript">
+        $("#ok").on("click", function () {
+          var laukelioTekstas = $("#tekstas").val();
+          var listItem = $("<li></li>"); // sukuriu kintamajį, kurio reikšmė naujas list item
+          listItem.text(laukelioTekstas); // Tada tam list itemui priskiriu teksto laukelio reikšmę. TEXT funkcija priskiria elementui tekstą (arba reikšmę)
+          
+          $(".box ul").append(listItem); // tada į boxo ul elementą įkeliu naują lista itemą su reikšme
+        })
+      </script>
+  </body>
+</html>
