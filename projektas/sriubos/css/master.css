@@ -6,3 +6,28 @@
 img{
   width: 200px;
 }
+h2{
+  text-align: center;
+  color: #009900;
+  text-shadow: 3px 3px 10px #66ff66;
+  }
+
+
+/* Testas */
+.float{
+	position:fixed;
+  font-size: 14px;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:	#f2f2f2;
+	color:black;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+/* .my-float{
+	margin-top:12px;
+} */

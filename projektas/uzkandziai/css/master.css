@@ -1,0 +1,13 @@
+.pavadinimas{
+  width: 100%;
+  text-align: center;
+}
+
+img{
+  width: 200px;
+}
+h2{
+  text-align: center;
+  color: #800000;
+  text-shadow: 3px 3px 10px #ff4d4d;
+  }
