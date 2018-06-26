@@ -4,7 +4,7 @@
 }
 
 img{
-  width: 200px;
+  width: 50px;
 }
 h1{
   text-align: center;
@@ -31,4 +31,8 @@ h2{
   	border-radius:50px;
   	text-align:center;
   	box-shadow: 2px 2px 3px #999;
+  }
+
+  .spalva{
+    background-color: #009933;
   }
