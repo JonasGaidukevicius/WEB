@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form class="" action="index.html" method="post">
+      <fieldset>
+        <legend>Pateikite savo receptą</legend>
+        <table>
+          <tr>
+            <td>Jūsų vardas: </td>
+            <td><input type="text" name="username" value="" required></td>
+            <!-- REQUIRED - privalomas užpildyti laukas -->
+          </tr>
+          <tr>
+            <td>Kokia patiekalo kategorija: </td>
+            <td>
+              <select name="kategorija">
+               <option value="sriubos">Sriubos</option>
+               <option value="antrieji">Antrieji patiekalai</option>
+               <option value="salotos">Salotos</option>
+               <option value="uzkandziai">Užkandžiai</option>
+               <option value="picos">Picos</option>
+               <option value="desertai">Desertai</option>
+             </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Jūsų receptas:</td>
+            <td>
+              <textarea name="receptas" required placeholder="Jūsų receptas čia" rows="8" cols="60"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2"><input type="submit" name="" value="Pateikti"></td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>
